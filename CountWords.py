@@ -1,15 +1,18 @@
-#Cuantas veces se repite cada palabra del texto? examen tecnico de empresa real.
+#Cuantas veces se repite cada palabra del texto?
 
+#Texto a minusculas
 def tolowercase(texto):
     lowercase = texto.lower()
     return lowercase
-    
+
+#Limpiando texto  
 def cleantext(textlower):
     cleanedtext = textlower.replace(",", "").replace(".", "")
     
     separatedtext= cleanedtext.split(" ")
     return separatedtext
-    
+ 
+#Contando palabras   
 def countwords(cleantext):
     dictionary = {}
     for word in cleantext:
